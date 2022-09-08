@@ -1,5 +1,59 @@
-local a=[[
---SCRIPT
-]]
+--lua uglifier / "obfuscator"
+math.randomseed(os.time()*1000) -- makes math.random actually random lol
+local charset = {}  do -- [0-9a-zA-Z]
+    for c = 65, 90  do table.insert(charset, string.char(c)) end
+    for c = 97, 122 do table.insert(charset, string.char(c)) end
+end
 
-a="--// Decompiled Code. \n"..a;function Obfuscate(b)local c="function IllIlllIllIlllIlllIlllIll(IllIlllIllIllIll) if (IllIlllIllIllIll==(((((919 + 636)-636)*3147)/3147)+919)) then return not true end if (IllIlllIllIllIll==(((((968 + 670)-670)*3315)/3315)+968)) then return not false end end; "local d=c;local e=""local f={"IllIllIllIllI","IIlllIIlllIIlllIIlllII","IIllllIIllll"}local g=[[local IlIlIlIlIlIlIlIlII = {]]local h=[[local IllIIllIIllIII = loadstring]]local i=[[local IllIIIllIIIIllI = table.concat]]local j=[[local IIIIIIIIllllllllIIIIIIII = "''"]]local k="local "..f[math.random(1,#f)].." = (7*3-9/9+3*2/0+3*3);"local l="local "..f[math.random(1,#f)].." = (3*4-7/7+6*4/3+9*9);"local m="--// Obfuscated via yunglean_#4171 dicord-bot-lua-obfuscation - https://github.com/yunglean4171  \n\n"for n=1,string.len(b)do e=e.."'\\"..string.byte(b,n).."',"end;local o="function IllIIIIllIIIIIl("..f[math.random(1,#f)]..")"local p="function "..f[math.random(1,#f)].."("..f[math.random(1,#f)]..")"local q="local "..f[math.random(1,#f)].." = (5*3-2/8+9*2/9+8*3)"local r="end"local s="IllIIIIllIIIIIl(900283)"local t="function IllIlllIllIlllIlllIlllIllIlllIIIlll("..f[math.random(1,#f)]..")"local q="function "..f[math.random(1,#f)].."("..f[math.random(1,#f)]..")"local u="local "..f[math.random(1,#f)].." = (9*0-7/5+3*1/3+8*2)"local v="end"local w="IllIlllIllIlllIlllIlllIllIlllIIIlll(9083)"local x=m..d..k..l..i..";"..o.." "..p.." "..q.." "..r.." "..r.." "..r..";"..s..";"..t.." "..q.." "..u.." "..v.." "..v..";"..w..";"..h..";"..g..e.."}".."IllIIllIIllIII(IllIIIllIIIIllI(IlIlIlIlIlIlIlIlII,IIIIIIIIllllllllIIIIIIII))()"print(x)end;do Obfuscate(a)end
+local function randomString(length)
+    if not length or length <= 0 then return '' end
+    math.randomseed(os.time()*10000)
+    return randomString(length - 1) .. charset[math.random(1, #charset)]
+end
+
+local obfuscatethis = [[
+--scripthere
+]]
+function wait(seconds)
+    local start = os.time()
+    repeat until os.time() > start + seconds
+end
+
+
+
+local varname1 = randomString(35)
+local varname2 = randomString(167)
+local varname3 = randomString(105)
+local varname4 = randomString(67)
+local varname5 = randomString(140)
+local assertname = randomString(319)
+local loadname = randomString(424)
+local stringname = randomString(492)
+local reversename = randomString(428)
+local memestrings = "craked loadstrin = printe1!111"..randomString(38)
+local tablename = randomString(389)
+local keyithink = randomString(128)
+local memestring1 = '[[                    please dont touch me im only N/A years old          ]]'
+local memstring2 = '[[                  mfw IlIlIIIlIlIIIlIllIIlIlI                ]]'
+local memestring3 = '[[          i got a 53 on my biology test lol                    ]]'
+local memestring4 = '[[        dsc.gg/fizla is my discord server lol                  ]]'
+print()
+function decompileString(string)
+    string = string.gsub(string,keyithink,"")
+  return string
+end
+
+
+function compileString(string)
+  compiledString = string.reverse(string.gsub(string,"",keyithink))
+  if string.len(string) > 1000 then
+      print("--oh boy this is gonna take a bit. "..string.len(string).." Characters????")
+  end
+  wait(3)
+  print("_,protected_with_SodaSecure, cord = 'dsc.gg/fizla'\n\nreturn(function(...)local "..varname5.." = '"..keyithink.."';local "..varname4.."=[["..compiledString.."]];local "..tablename.."={'se','se','"..memestrings..",print,"..memestrings..",loadstring'};function l(l) return "..memstring2.." end;local "..stringname.."=string.reverse;"..reversename.."=string.gsub;"..assertname.."=assert;function ol(l) return "..memestring3.." end;local sodamoment=getfenv;local "..tablename..keyithink.."={'keep going!!!!','nice job this far?','bcs is better than bb :troll:','fizla might bbe on top idk lol','so hack',"..loadname.."};function l(l) return "..memestring1.." end; "..loadname.."=loadstring;local "..varname1.."="..stringname.."("..varname4..");if "..tablename.."[1]=="..tablename.."[1] and print==loadstring and "..tablename.."[2]=="..tablename.."[2] and key==key and math.pi==math.pi*1 and 2.15>2.14312134 and 2/2+1/2+3==2/2+1/2+3 and 1==1 then function gotta_be_more_creative_skid()gotta_be_more_creative_skid() return [[3210]]end;gotta_be_more_creative_skid() end;local "..varname2.."="..reversename.."("..varname1..","..varname5..",'');local "..varname3.."="..stringname.."("..varname4..");"..assertname.."("..loadname.."("..varname2.."))()end)(sodamoment,{},0)")
+
+
+  
+end
+
+compileString(obfuscatethis)
