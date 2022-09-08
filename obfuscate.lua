@@ -12,7 +12,7 @@ local function randomString(length)
 end
 
 local obfuscatethis = [[
---scripthere
+--SCRIPT
 ]]
 function wait(seconds)
     local start = os.time()
