@@ -63,7 +63,7 @@ def obfuscation(path, author):
 @bot.event
 async def on_ready():
     print(f"{bot.user} is online ✔️")
-    await bot.change_presence(status=discord.Status.online, activity=discord.Game(name="yunglean_#4171 lua obfuscator"))
+    await bot.change_presence(status=discord.Status.online, activity=discord.Game(name="sodasecure"))
 
 @bot.event
 async def on_message(message):
